@@ -1,4 +1,5 @@
-package servlets;
+package red;
+
 
 import java.io.IOException;
 
@@ -10,7 +11,6 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.sql.DataSource;
 
-import ex.DaoCountryPrep;
 
 /**
  * Servlet implementation class Login
