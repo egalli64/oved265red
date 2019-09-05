@@ -2,25 +2,27 @@ package red;
 
 import java.sql.Date;
 
-public class Superuser {
+public class SuperUser {
 	private long superId;
 	private String superName;
 	private String superSurname;
 	private Date superBirth;
-	private String superPassword;
 	private String superUsername;
+	private String superPassword;
 
-	public Superuser() {
+
+	public SuperUser() {
 		
 	}
 	
-	public Superuser(long superId, String superName, String superSurname, Date superBirth, String superPassword, String superUsername) {
+	public SuperUser(long superId, String superName, String superSurname, Date superBirth, String superPassword, String superUsername) {
 		this.superId=superId;
 		this.superName=superName;
 		this.superSurname=superSurname;
 		this.superBirth=superBirth;
-		this.superPassword=superPassword;
 		this.superUsername=superUsername;
+		this.superPassword=superPassword;
+
 	}
 
 	public long getSuperId() {
