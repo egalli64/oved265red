@@ -20,7 +20,7 @@ Welcome <c:if test="${users != null }">Utente
         </tr>
         <c:forEach var="cur" items="${users}">
             <tr>
-                <td>${cur.username}</td>
+                <td>${cur.name}</td>
                 <td>${cur.password}</td>
             </tr>
         </c:forEach>
