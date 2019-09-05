@@ -6,7 +6,7 @@
 <body>
 
 	<h2></h2>
-<form action="/red/resources/Login" method="post">
+<form action="/red/Login" method="post">
 	<span> <label for="nm" class="labels">Name: </label> <input type="text"
 		name="email" id="nm" placeholder="username" required />
 	</span>
