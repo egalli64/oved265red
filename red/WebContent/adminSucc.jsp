@@ -12,10 +12,10 @@
             <th>superusers_username</th>
             <th>superusers_password</th>
         </tr>
-        <c:forEach var="cursor" items="${superUsers}">
+        <c:forEach var="superUsers" items="${superUsers}">
             <tr>
-                <td>${cursor.superUsername}</td>
-                <td>${cursor.superPassword}</td>
+                <td>${superUsers.superUsername}</td>
+                <td>${superUsers.superPassword}</td>
             </tr>
         </c:forEach>
     </table>

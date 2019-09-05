@@ -37,10 +37,10 @@ public class SuperUser4Dao extends HttpServlet {
     	
     	session.setAttribute("superUsers", superUser);
 		request.setAttribute("superUsers", superUser);
-		request.getRequestDispatcher("adminSucc.jsp").forward(request, response);
+		request.getRequestDispatcher("loginsucc.jsp").forward(request, response);
     	
     	} else {
-    		response.sendRedirect("adminSucc.jsp");
+    		response.sendRedirect("loginsucc.jsp");
     	}
     }
 

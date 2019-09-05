@@ -11,6 +11,8 @@
 <h1>
 Welcome <c:if test="${users != null }">Utente
 </c:if>
+<c:if test="${superUsers != null }">Amministratore
+</c:if>
 </h1>
 
     <table>
@@ -22,6 +24,13 @@ Welcome <c:if test="${users != null }">Utente
             <tr>
                 <td>${cur.name}</td>
                 <td>${cur.password}</td>
+            </tr>
+        </c:forEach>
+        
+                <c:forEach var="superUsers" items="${superUsers}">
+            <tr>
+                <td>${superUsers.superUsername}</td>
+                <td>${superUsers.superPassword}</td>
             </tr>
         </c:forEach>
     </table>
