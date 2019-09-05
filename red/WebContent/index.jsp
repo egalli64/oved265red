@@ -11,7 +11,7 @@
 		name="email" id="nm" placeholder="username" required />
 	</span>
 	<span>
-	<label for="nm">Password: </label> <input type="text" name="password" id="nm"
+	<label for="nm">Password: </label> <input type="password" name="password" id="nm"
 				placeholder="password" required />
 	</span>
 	<span>
