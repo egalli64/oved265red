@@ -8,6 +8,11 @@
 <title>Login success</title>
 </head>
 <body>
+<h1>
+Welcome <c:if test="${users != null }">Utente
+</c:if>
+</h1>
+
     <table>
         <tr>
             <th>id</th>
@@ -15,7 +20,7 @@
         </tr>
         <c:forEach var="cur" items="${users}">
             <tr>
-                <td>${cur.email}</td>
+                <td>${cur.username}</td>
                 <td>${cur.password}</td>
             </tr>
         </c:forEach>
