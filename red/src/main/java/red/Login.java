@@ -37,7 +37,7 @@ public class Login extends HttpServlet {
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		
 		 DaoUser dao = new DaoUser(ds);
-	        String s= "select users_id, users_name, users_surname, users_birth, users_password, users_username, users_creditcard, users_licence from users where users_username= ? and users_password=?";
+	        String s= "select users_id, users_name, users_surname, users_birth, users_password, users_username, users_creditcard, users_licence from users where users_username= 'mariorossi@rossi.it' and users_password= 'password'";
 	        
 	        request.setAttribute("users", dao.getUsers(s,request.getParameter("email"), request.getParameter("password")));
 	        request.getRequestDispatcher("/loginsucc.jsp").forward(request, response);
