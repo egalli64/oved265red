@@ -1,5 +1,13 @@
 * {box-sizing: border-box}
 
+.white{
+	color:white;
+}
+
+div {
+	background-color: black;
+}
+
 /* Full-width input fields */
   input[type=text], input[type=password] {
   width: 100%;

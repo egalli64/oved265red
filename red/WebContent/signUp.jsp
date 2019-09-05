@@ -9,33 +9,33 @@
 </head>
 <body>
 	 <form action="" style="border:1px solid #ccc">
-  <div class="container">
-    <h1>Join us!</h1>
-    <p>Please fill in this form to create an account.</p>
+  <div class="container w3-black">
+    <h1 class="white">Join us!</h1>
+    <p class="white">Please fill in this form to create an account.</p>
     <hr>
 
-    <label for="name"><b>Name</b></label>
+    <label for="name" class="white"><b>Name</b></label>
     <input type="text" placeholder="Enter Name" name="name" required>
     
-    <label for="surname"><b>Surname</b></label>
+    <label for="surname" class ="white"><b>Surname</b></label>
     <input type="text" placeholder="Enter Surname" name="surname" required>
     
-    <label for="email"><b>Email</b></label>
+    <label for="email" class="white"><b>Email</b></label>
     <input type="text" placeholder="Enter Email" name="email" required>
     
-     <label for="birthdate"><b>Birth date</b></label>
+     <label for="birthdate" class="white"><b>Birth date</b></label>
     <input type="text" placeholder="Enter Email" name="birth date" required>
     
-    <label for="licenseid"><b>Driving License ID</b></label>
+    <label for="licenseid" class="white"><b>Driving License ID</b></label>
     <input type="text" placeholder="Enter Driving License ID" name="driveID" required>
 
-    <label for="psw"><b>Password</b></label>
+    <label for="psw" class="white"><b>Password</b></label>
     <input type="password" placeholder="Enter Password" name="psw" required>
 
-    <label for="psw-repeat"><b>Repeat Password</b></label>
+    <label for="psw-repeat" class="white"><b>Repeat Password</b></label>
     <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
 
-    <a href="index.jsp">Back to login page</a>
+    <a href="index.jsp" class="white">Back to login page</a>
    
 
     <div class="clearfix">
