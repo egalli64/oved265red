@@ -15,7 +15,7 @@ import javax.sql.DataSource;
 /**
  * Servlet implementation class Login
  */
-@WebServlet("/resurces/Login")
+@WebServlet("/resources/Login")
 public class Login extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 	
@@ -37,10 +37,10 @@ public class Login extends HttpServlet {
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		
 		 DaoUser dao = new DaoUser(ds);
-	        String s= "select user_id, user_name, user_surname, user_birth, user_password, user_username, user_creditcard, user_licence from members where user_username= ? and user_password=?";
+	        String s= "select users_id, users_name, users_surname, users_birth, users_password, users_username, users_creditcard, users_licence from users where users_username= ? and users_password=?";
 	        
-	        request.setAttribute("users", dao.getUsers(s,request.getParameter("fav"), request.getParameter("PASSWORDPLAC")));
-	        request.getRequestDispatcher("/red/Placeholder.jsp").forward(request, response);
+	        request.setAttribute("users", dao.getUsers(s,request.getParameter("email"), request.getParameter("password")));
+	        request.getRequestDispatcher("/loginsucc.jsp").forward(request, response);
 		
 		// TODO Auto-generated method stub
 		
