@@ -6,7 +6,7 @@
 <body>
 
 	<h2>Welcome to our car sharing site!</h2>
-<form action="/red/resources/Login" method="post">
+<form action="/red/Login" method="post">
 	<span> <label for="nm">Name: </label> <input type="text"
 		name="email" id="nm" placeholder="username" required />
 	</span>
