@@ -10,11 +10,11 @@
 <body>
 	<h2 class="labels">Welcome Super-User!</h2>
 
-<form action="red/resources/Login" method="post">
+<form action="red/adminLog" method="post">
 	<span> <label for="nm" class="labels">Name: </label> <input type="text"
 		name="name" id="nm" placeholder="username" required />
 	</span>
-	<span> <label for="ps" class="labels">Password: </label> <input type="text"
+	<span> <label for="ps" class="labels">Password: </label> <input type="password"
 		name="password" id="ps" placeholder="Password" required />
 	</span>
 	<span> 
