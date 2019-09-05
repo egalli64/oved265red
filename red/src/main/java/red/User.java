@@ -1,7 +1,7 @@
 package red;
 
 import java.sql.Date;
-import java.time.LocalDate;
+
 
 public class User {
 	private long id;

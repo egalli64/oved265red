@@ -1,9 +1,9 @@
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <!DOCTYPE html>
 <html>
 <head>
 <meta charset="UTF-8">
-<link rel="stylesheet" type="text/css" href="./css/regions.css">
-<sql:query dataSource="jdbc/hr" var="regions">select * from regions</sql:query>
+
 <title>HR Regions</title>
 </head>
 <body>
