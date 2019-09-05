@@ -4,7 +4,6 @@ import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
-import java.sql.Statement;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -31,7 +30,7 @@ public class DaoUser {
             ResultSet rs = stmt.executeQuery();
 
             while (rs.next()) {
-                results.add(new User(rs.getLong("USER_ID"), rs.getString("USER_NAME"),rs.getString("USER_SURNAME"),rs.getDate("USER_BIRTH"),rs.getString("USER_PASSWORD"),rs.getString("USER_USERNAME"),rs.getLong("USER_CREDITCARD"),rs.getString("USER_LICENCE")));
+                results.add(new User(rs.getLong("USERS_ID"), rs.getString("USERS_NAME"),rs.getString("USERS_SURNAME"),rs.getDate("USERS_BIRTH"),rs.getString("USERS_PASSWORD"),rs.getString("USERS_USERNAME"),rs.getLong("USERS_CREDITCARD"),rs.getString("USERS_LICENCE")));
             }
         } catch (SQLException se) {
             throw new IllegalStateException("Database issue " + se.getMessage());
