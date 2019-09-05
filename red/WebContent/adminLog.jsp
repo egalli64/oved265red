@@ -10,7 +10,7 @@
 <body>
 	<h2 class="labels">Welcome Super-User!</h2>
 
-<form action="red/adminLog" method="post">
+<form action="/red/adminLog" method="post">
 	<span> <label for="nm" class="labels">Name: </label> <input type="text"
 		name="name" id="nm" placeholder="username" required />
 	</span>

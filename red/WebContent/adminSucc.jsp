@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>HR Regions</title>
+<title>Super Users</title>
 </head>
 <body>
     <table>
