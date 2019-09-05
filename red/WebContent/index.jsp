@@ -5,32 +5,21 @@
 </head>
 <body>
 
-	<h2>Welcome to our car sharing site!</h2>
-<form action="/red/Login" method="post">
-	<span> <label for="nm">Name: </label> <input type="text"
+	<h2></h2>
+<form action="/red/resources/Login" method="post">
+	<span> <label for="nm" class="labels">Name: </label> <input type="text"
 		name="email" id="nm" placeholder="username" required />
 	</span>
 	<span>
-	<label for="nm">Password: </label> <input type="password" name="password" id="nm"
+	<label for="ps" class="labels">Password: </label> <input type="password" name="password" id="ps"
 				placeholder="password" required />
 	</span>
 	<span>
 	<input type="submit" value="log in" class="logbtn" />
 	</span>
 </form>
-<div>
-<a href="signUp.jsp">Sign Up!</a>
+<div id = "bottomleft">
+<a href="signUp.jsp" class="labels">Sign Up!</a>
 <br>
-<a href="adminLog.jsp">I'm an administrator!</a>
+<a href="adminLog.jsp" class="labels">I'm an administrator!</a>
 </div>
-
-
-	<label>
-      <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
-    </label>
-
-
-
-</body>
-</html>
-

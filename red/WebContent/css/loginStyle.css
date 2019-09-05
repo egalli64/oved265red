@@ -12,6 +12,18 @@ body {
 	background-size: cover;
 }
 
+h2{
+	color: white;
+}
+
+#bottomleft{
+	
+}
+
+.labels{
+	color: white;
+}
+
 #bottomheader{
     position: absolute;
     bottom: 0;
