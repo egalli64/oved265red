@@ -10,19 +10,17 @@
 <body>
 	<h2 class="labels">Welcome Super-User!</h2>
 
-<form action="/red/adminLog" method="post">
+<form action="/red/Login" method="post">
 	<span> <label for="nm" class="labels">Name: </label> <input type="text"
 		name="name" id="nm" placeholder="username" required />
 	</span>
-	<span> <label for="ps" class="labels">Password: </label> <input type="password"
-		name="password" id="ps" placeholder="Password" required />
+	<span>
+	<label for="ps" class="labels">Password: </label> <input type="password" name="spassword" id="ps"
+				placeholder="password" required />
 	</span>
-	<span> 
-		<input type="submit" value="log in" class="logbtn" />
+	<span>
+	<input type="submit" value="log in" class="logbtn" />
 	</span>
-	<div>
-		<a href="index.jsp" class="labels">Back to login page</a>
-	</div>
 </form>
 <br>
 </body>
