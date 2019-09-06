@@ -24,7 +24,7 @@
     <input type="text" placeholder="Enter Email" name="email" required>
     
      <label for="birthdate" class="white"><b>Birth date</b></label>
-    <input type="text" placeholder="Enter Email" name="birth date" required>
+    <input type="text" placeholder="Enter Email" name="birthdate" required>
     
     <label for="licenseid" class="white"><b>Driving License ID</b></label>
     <input type="text" placeholder="Enter Driving License ID" name="driveID" required>
@@ -32,8 +32,8 @@
     <label for="psw" class="white"><b>Password</b></label>
     <input type="password" placeholder="Enter Password" name="psw" required>
 
-    <label for="psw-repeat" class="white"><b>Repeat Password</b></label>
-    <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+    <label for="creditcard" class="white"><b>Credit Card</b></label>
+    <input type="text" placeholder="insert credit card number" name="creditcard" required>
 
     <a href="index.jsp" class="white">Back to login page</a>
    
