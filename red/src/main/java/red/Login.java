@@ -24,20 +24,32 @@ public class Login extends HttpServlet {
 
 	protected void doGet(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
-		
+
 		if (request.getParameter("email") != null) {
 
-		DaoUser dao = new DaoUser(ds);
+			DaoUser dao = new DaoUser(ds);
 
-		request.setAttribute("users", dao.getUsers(request.getParameter("email"), request.getParameter("password")));
-		request.getRequestDispatcher("/loginsucc.jsp").forward(request, response);
+			request.setAttribute("users",
+					dao.getUsers(request.getParameter("email"), request.getParameter("password")));
+			if (dao.getUsers(request.getParameter("name"), request.getParameter("spassword")).size() < 1) {
+				request.getRequestDispatcher("/index.jsp").forward(request, response);
+			}
+			if (dao.getUsers(request.getParameter("name"), request.getParameter("spassword")).size() == 1) {
+				request.getRequestDispatcher("/loginsucc.jsp").forward(request, response);
+			}
 		}
 		if (request.getParameter("name") != null) {
-			
-			DaoSuperUser dao = new DaoSuperUser (ds);
 
-			request.setAttribute("users", dao.getSuperUsers(request.getParameter("name"), request.getParameter("spassword")));
-			request.getRequestDispatcher("/adminsucc.jsp").forward(request, response);
+			DaoSuperUser dao = new DaoSuperUser(ds);
+
+			request.setAttribute("users",
+					dao.getSuperUsers(request.getParameter("name"), request.getParameter("spassword")));
+			if (dao.getSuperUsers(request.getParameter("name"), request.getParameter("spassword")).size() < 1) {
+				request.getRequestDispatcher("/adminLog.jsp").forward(request, response);
+			}
+			if (dao.getSuperUsers(request.getParameter("name"), request.getParameter("spassword")).size() == 1) {
+				request.getRequestDispatcher("/adminsucc.jsp").forward(request, response);
+			}
 		}
 
 	}
