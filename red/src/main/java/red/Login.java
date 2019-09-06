@@ -37,7 +37,7 @@ public class Login extends HttpServlet {
 			DaoSuperUser dao = new DaoSuperUser (ds);
 
 			request.setAttribute("users", dao.getSuperUsers(request.getParameter("name"), request.getParameter("spassword")));
-			request.getRequestDispatcher("/loginsucc.jsp").forward(request, response);
+			request.getRequestDispatcher("/loginsuccX.jsp").forward(request, response);
 		}
 
 	}
