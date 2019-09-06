@@ -3,7 +3,7 @@ body {
 	height: 100%;
 	top: 0;
 	left: 0;
-	background: url(highway.jpg) center top;
+	background: url(highway.jpg) center top no-repeat;
 	position: fixed;
 	z-index: -1;
 	-webkit-background-size: cover;
