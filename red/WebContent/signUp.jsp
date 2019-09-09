@@ -8,7 +8,7 @@
 <title>Sign Up!</title>
 </head>
 <body>
-	 <form action="/red/Register" style="border:1px solid #ccc" method="post">
+	 <form action="/red/Registration" style="border:1px solid #ccc" method="post">
   <div class="container w3-black">
     <h1 class="white">Join us!</h1>
     <p class="white">Please fill in this form to create an account.</p>
