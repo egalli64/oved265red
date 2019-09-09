@@ -31,10 +31,10 @@ public class Login extends HttpServlet {
 
 			request.setAttribute("users",
 					dao.getUsers(request.getParameter("email"), request.getParameter("password")));
-			if (dao.getUsers(request.getParameter("name"), request.getParameter("spassword")).size() < 1) {
+			if (dao.getUsers(request.getParameter("email"), request.getParameter("password")).size() < 1) {
 				request.getRequestDispatcher("/index.jsp").forward(request, response);
 			}
-			if (dao.getUsers(request.getParameter("name"), request.getParameter("spassword")).size() == 1) {
+			if (dao.getUsers(request.getParameter("email"), request.getParameter("password")).size() == 1) {
 				request.getRequestDispatcher("/loginsucc.jsp").forward(request, response);
 			}
 		}
