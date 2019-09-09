@@ -9,13 +9,13 @@
 <title>Sign Up!</title>
 </head>
 <body>
-<%-- <c:if test="${users != null }">
+ <c:if test="${users != null }">
 <h2>
 ${users }
 
 </h2>
 
-</c:if> --%>
+</c:if>
 	<form action="/red/Registration" style="border: 1px solid #ccc"
 		method="post">
 		<div class="container w3-black">

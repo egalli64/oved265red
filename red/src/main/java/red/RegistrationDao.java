@@ -50,7 +50,7 @@ public class RegistrationDao {
 				results="e-mail already used";
 				return results;
 			} else if ((se.getMessage()).contains("LICENCE")) {
-				results="licence already used";
+				results="Licence already used";
 			} else {
 			throw new IllegalStateException("Database issue " + se.getMessage());
 			}
