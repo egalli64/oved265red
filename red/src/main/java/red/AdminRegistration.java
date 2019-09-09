@@ -11,14 +11,14 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.sql.DataSource;
 
-@WebServlet("/Registration")
-public class Registration extends HttpServlet {
+@WebServlet("/AdminRegistration")
+public class AdminRegistration extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 	
 	@Resource(name = "jdbc/red")
 	private DataSource ds;
        
-    public Registration() {
+    public AdminRegistration() {
         super();
     }
 
@@ -29,12 +29,12 @@ public class Registration extends HttpServlet {
 		try {
 	
 		
-		RegistrationDao dao= new RegistrationDao(ds);
-		request.setAttribute("newadmin", dao.setUser(request.getParameter("name"), request.getParameter("surname"),Date.valueOf(request.getParameter("birth")),request.getParameter("email"),request.getParameter("psw"),Long.parseLong(request.getParameter("creditcard")),request.getParameter("driveID") ));
+		AdminRegistrationDao dao= new AdminRegistrationDao(ds);
+		request.setAttribute("newadmin", dao.setAdmin(request.getParameter("name"), request.getParameter("surname"),Date.valueOf(request.getParameter("birth")),request.getParameter("email"),request.getParameter("psw") ));
 		if (request.getAttribute("newadmin").equals("e-mail already used") || request.getAttribute("newadmin").equals("licence already used")) {
-			request.getRequestDispatcher("/signUp.jsp").forward(request, response);
+			request.getRequestDispatcher("/adminsucc.jsp").forward(request, response);
 		} else {
-		request.getRequestDispatcher("/signupsucc.jsp").forward(request, response);
+		request.getRequestDispatcher("/Adminsignupsucc.jsp").forward(request, response);
 		}
 		} catch (ServletException se) {
 			throw new IllegalStateException("Database issue " + se.getMessage());

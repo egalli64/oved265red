@@ -27,7 +27,15 @@
 		</c:forEach>
 	</table>
 
-	<form action="" method="post">
+	<c:if test="${newadmin != null }">
+
+		<h2>Error</h2>
+
+		<h3>${newadmin }</h3>
+
+	</c:if>
+
+	<form action="/red/AdminRegistration" method="post">
 
 		<h1>Create new admin</h1>
 
