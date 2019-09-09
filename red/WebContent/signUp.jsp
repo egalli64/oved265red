@@ -8,7 +8,7 @@
 <title>Sign Up!</title>
 </head>
 <body>
-	 <form action="/Register" style="border:1px solid #ccc">
+	 <form action="/red/Register" style="border:1px solid #ccc" method="post">
   <div class="container w3-black">
     <h1 class="white">Join us!</h1>
     <p class="white">Please fill in this form to create an account.</p>
@@ -24,7 +24,8 @@
     <input type="text" placeholder="Enter Email" name="email" required>
     
      <label for="birthdate" class="white"><b>Birth date</b></label>
-    <input type="text" placeholder="Enter Email" name="birthdate" required>
+    <input type="date" placeholder="Enter birthdate" name="franco"  value="2018-07-22"
+       min="1900-01-01" max="2099-12-31"> required>
     
     <label for="licenseid" class="white"><b>Driving License ID</b></label>
     <input type="text" placeholder="Enter Driving License ID" name="driveID" required>
@@ -32,8 +33,8 @@
     <label for="psw" class="white"><b>Password</b></label>
     <input type="password" placeholder="Enter Password" name="psw" required>
 
-    <label for="creditcard" class="white"><b>Credit Card</b></label>
-    <input type="text" placeholder="insert credit card number" name="creditcard" required>
+    <label for="creditcard" class="white"><b>U</b>Credit Card</label>
+    <input type="number" placeholder="Credit Card" name="creditcard" required>
 
     <a href="index.jsp" class="white">Back to login page</a>
    
