@@ -46,7 +46,14 @@ public class RegistrationDao {
 			System.out.println();
 			
 		} catch (SQLException se) {
+			if ((se.getMessage()).contains("USERNAME")) {
+				results="e-mail already used";
+				return results;
+			} else if ((se.getMessage()).contains("LICENCE")) {
+				results="licence already used";
+			} else {
 			throw new IllegalStateException("Database issue " + se.getMessage());
+			}
 		}
 
 		return results;
