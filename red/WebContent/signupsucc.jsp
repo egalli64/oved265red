@@ -9,10 +9,10 @@
 </head>
 <body>
 <h1>
-Welcome <c:if test="${users != null }">Utente
+Welcome <c:if test="${user != null }">Utente
 </c:if>
 </h1>
 
-  ${users }
+  ${user }
 </body>
 </html>
