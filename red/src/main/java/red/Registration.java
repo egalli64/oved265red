@@ -30,7 +30,7 @@ public class Registration extends HttpServlet {
 	
 		
 		RegistrationDao dao= new RegistrationDao(ds);
-		request.setAttribute("users", dao.setUser(request.getParameter("name"), request.getParameter("surname"),Date.valueOf(request.getParameter("franco")),request.getParameter("email"),request.getParameter("psw"),Long.parseLong(request.getParameter("creditcard")),request.getParameter("driveID") ));
+		request.setAttribute("users", dao.setUser(request.getParameter("name"), request.getParameter("surname"),Date.valueOf(request.getParameter("birth")),request.getParameter("email"),request.getParameter("psw"),Long.parseLong(request.getParameter("creditcard")),request.getParameter("driveID") ));
 		if (request.getAttribute("users").equals("e-mail already used") || request.getAttribute("users").equals("licence already used")) {
 			request.getRequestDispatcher("/signUp.jsp").forward(request, response);
 		} else {

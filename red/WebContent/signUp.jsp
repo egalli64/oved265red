@@ -32,7 +32,7 @@ ${users }
 				type="text" placeholder="Enter Email" name="email" required>
 
 			<label for="birthdate" class="white"><b>Birth date</b></label> <input
-				type="date" placeholder="Enter birthdate" name="franco"
+				type="date" placeholder="Enter birthdate" name="birth"
 				value="2018-07-22" min="1900-01-01" max="2099-12-31">
 			required> <label for="licenseid" class="white"><b>Driving
 					License ID</b></label> <input type="text"
