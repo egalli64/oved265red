@@ -31,7 +31,7 @@ public class Registration extends HttpServlet {
 		RegistrationDao dao= new RegistrationDao(ds);
 		Date c= Date.valueOf("2000-01-01");
 		request.setAttribute("users", dao.setUser(request.getParameter("name"), request.getParameter("surname"),Date.valueOf(request.getParameter("franco")),request.getParameter("email"),request.getParameter("psw"),Long.parseLong(request.getParameter("creditcard")),request.getParameter("driveID") ));
-		request.getRequestDispatcher("/loginsucc.jsp").forward(request, response);
+		request.getRequestDispatcher("/signupsucc.jsp").forward(request, response);
 	}
 
 	/**
