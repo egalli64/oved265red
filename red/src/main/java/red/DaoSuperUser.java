@@ -9,6 +9,8 @@ import java.util.List;
 
 import javax.sql.DataSource;
 
+import Admin.SuperUser;
+
 public class DaoSuperUser {
 	private Connection conn2;
 	private String superUser = "SELECT  * FROM superusers WHERE superusers_username=? AND superusers_password=?";

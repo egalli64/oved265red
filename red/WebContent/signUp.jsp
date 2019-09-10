@@ -9,9 +9,9 @@
 <title>Sign Up!</title>
 </head>
 <body>
- <c:if test="${users != null }">
+ <c:if test="${user != null }">
 <h2>
-${users }
+${user }
 
 </h2>
 
