@@ -9,7 +9,7 @@
 </head>
 <body>
 <h1>
-Welcome <c:if test="${users != null }">Utente
+Welcome <c:if test="${users != null }"> Utente
 </c:if>
 </h1>
 
