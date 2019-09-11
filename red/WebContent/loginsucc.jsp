@@ -12,7 +12,7 @@
 Welcome <c:if test="${users != null }"> Utente
 </c:if>
 </h1>
-
+<!--  
     <table>
         <tr>
             <th>id</th>
@@ -25,5 +25,6 @@ Welcome <c:if test="${users != null }"> Utente
             </tr>
         </c:forEach>
     </table>
+-->
 </body>
 </html>
