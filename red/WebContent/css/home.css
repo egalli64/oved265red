@@ -1,10 +1,22 @@
 body {
-  font-family: Arial, Helvetica, sans-serif;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background: url("Car-sharing.jpg") center top no-repeat;
+	position:fixed;
+	z-index: -1;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover ;
 }
 
 .navbar {
   overflow: hidden;
   background-color: #ff0000;
+  font-family: ink free;
+  font-weight: bold;
 }
 
 .navbar a {
@@ -28,15 +40,18 @@ body {
   color: white;
   background-color: #ff0000;
   padding: 14px 16px;
+  font-family: ink free;
+  font-weight: bold;
 }
 
 .navbar a:hover, .dropdown:hover .dropbtn {
-  background-color: grey;
+  background-color: #f9f9f9;
+  color: black;
 }
 
 .dropdown-content {
   display: none;
-  position: absolute;
+  position: relative;
   background-color: #f9f9f9;
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
@@ -46,7 +61,7 @@ body {
 .dropdown-content a {
   float: none;
   color: black;
-  padding: 12px 16px;
+  padding: 16px 16px;
   text-decoration: none;
   display: block;
   text-align: left;
@@ -67,17 +82,34 @@ body {
        right: 0;
 }
 
-.navbar-bottom-right a {
-	   position: absolute;
-	   color: white;
-       left: auto;
-       right: 0;
+.navbar-fixed-bottom {
+	position: fixed;
+	bottom: 0;
+	background-color: #ff0000;
+	width: 100%;
+	
 }
 
-.navbar-bottom-left  {
-	   position: absolute;
-	   color: white;
-       left: 0;
-       right: auto;
-       background-color: red;
+.navbar-fixed-bottom a {
+	float: right;
+	color: white;
+	text-decoration: none;
+	display: block;
+	text-align: center;
+	padding: 16px 16px;
+	font-family: ink free;
+    font-weight: bold;
+}
+
+.navbar-fixed-bottom a:hover {
+  background: #f9f9f9;
+  color: black;
+}
+
+.navbar-fixed-bottom span {
+	float: left;
+	color: white;
+	font-size: 10px;
+	position: fixed;
+	bottom: 0;
 }

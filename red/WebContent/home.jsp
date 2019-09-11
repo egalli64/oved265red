@@ -5,7 +5,9 @@
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link rel="stylesheet" type="text/css" href="./css/prova.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<link href="css/bootstrap-dropdownhover.min.css" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="./css/home.css">
 </head>
 <body>
 
@@ -36,17 +38,11 @@
     </div>     
 </div>
 
-<h3>Dropdown Menu inside a Navigation Bar</h3>
-<p>Hover over the "Dropdown" link to see the dropdown menu.</p>
 
-</body>
 
-<nav class="navbar navbar-default navbar-fixed-bottom">
-      <div class="navbar-bottom-right">
+<div class="navbar-fixed-bottom">
       <a href="#"><i class="fa fa-fw fa-user-plus"></i> Admin</a>
-      </div>
-      <div class="navbar-bottom-left">
-      <i class="fa fa-fw fa-copyright"></i> Copyright Red Group
+      <span><i class="fa fa-fw fa-copyright"></i> Copyright Red Group</span>
     </div>
-</nav>
-</div>
+</body>
+</html>
