@@ -4,6 +4,8 @@ import java.sql.Date;
 
 
 public class User {
+	
+
 	private long id;
 	private String name;
 	private String surname;
@@ -92,6 +94,9 @@ public class User {
 		this.licence = licence;
 	}
 	
-	
+	@Override
+	public String toString() {
+		return " " + name + " " + surname;
+	}
 
 }
