@@ -24,7 +24,10 @@
       <a href="#">Help</a>
     </div>
   </div>
-<c:if test="${sessionScope.logged != null && sessionScope.logged instanceof (User)}">
+<p>
+Welcome <c:out value="${sessionScope.logged.toString()}"></c:out>
+</p>
+<c:if test="${(sessionScope.logged != null) and sessionScope.logged.getClass() == 'User'}">
   <div class="dropdown">
     <button class="dropbtn">Tables 
       <i class="fa fa-caret-down"></i>
