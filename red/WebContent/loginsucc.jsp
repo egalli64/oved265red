@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
+<%@ page session="true" %>
 <!DOCTYPE html>
 <html>
 <head>
@@ -9,7 +10,7 @@
 </head>
 <body>
 <h1>
-Welcome <c:if test="${users != null }"> Utente
+Welcome <c:if test="${users != null }"> <c:out value="${sessionScope.logged.toString()"/>
 </c:if>
 </h1>
 
