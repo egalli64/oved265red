@@ -38,7 +38,7 @@ public class Login extends HttpServlet {
 				request.getRequestDispatcher("/index.jsp").forward(request, response);
 			}
 			if (dao.getUsers(request.getParameter("email"), request.getParameter("password")).size() == 1) {
-				session.setAttribute("logged",dao.getUsers(request.getParameter("email"), request.getParameter("password")));
+				session.setAttribute("logged",dao.getUsers(request.getParameter("email"), request.getParameter("password")).get(0));
 				request.getRequestDispatcher("/loginsucc.jsp").forward(request, response);
 			}
 		}
@@ -52,7 +52,7 @@ public class Login extends HttpServlet {
 				request.getRequestDispatcher("/adminLog.jsp").forward(request, response);
 			}
 			if (dao.getSuperUsers(request.getParameter("name"), request.getParameter("spassword")).size() == 1) {
-				session.setAttribute("logged",dao.getSuperUsers(request.getParameter("name"), request.getParameter("spassword")));
+				session.setAttribute("logged",dao.getSuperUsers(request.getParameter("name"), request.getParameter("spassword")).get(0));
 				request.getRequestDispatcher("/adminsucc.jsp").forward(request, response);
 			}
 		}
