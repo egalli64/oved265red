@@ -17,26 +17,9 @@
 <body>
 <!-- NAVBAR DROPDOWN MENU-->
 <div class="navbar navbar-expand-sm">
-  <span class="pull-left"><img src="/red/image/logo.jpg" width="45" height="45" alt=""></span>
-  <div class="dropdown">
-    <button class="dropbtn">Cities 
-      <i class="fa fa-caret-down"></i>
-    </button>
-    <div class="dropdown-content">
-      <a href="#">Milano</a>
-      <a href="#">Roma</a>
-    </div>
-  </div>
-  <div class="dropdown">
-    <button class="dropbtn">Cars 
-      <i class="fa fa-caret-down"></i>
-    </button>
-    <div class="dropdown-content">
-      <a href="#">eCar</a>
-      <a href="#">Suv</a>
-      <a href="#">cityCar</a>
-    </div>
-  </div>     
+  <span class="pull-left"><img src="/red/image/logo.jpg" width="52" height="52" alt=""></span>
+    <a href="#"><i class="fa fa-fw fa-city"></i> Cities</a>
+    <a href="#"><i class="fa fa-fw fa-car"></i> Cars</a>
 </div>
 
 
@@ -48,7 +31,7 @@
 				<h3>ENTER</h3>
 				<div class="d-flex justify-content-end social_icon">
 					<span><i class="fab fa-facebook-square"></i></span>
-					<span><i class="fab fa-google-plus-square"></i></span>
+					<span><i class="fab fa-instagram"></i></span>
 					<span><i class="fab fa-twitter-square"></i></span>
 				</div>
 			</div>
