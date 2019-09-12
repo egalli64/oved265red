@@ -60,7 +60,7 @@
 			</div>
 			<div class="card-footer">
 				<div class="d-flex justify-content-center link1">
-					Don't have an account?<a href="#">Sign Up</a>
+					Don't have an account?<a href="signUp.jsp">Sign Up</a>
 				</div>
 				<div class="d-flex justify-content-center link2">
 					<a href="#">Forgot your password?</a>
